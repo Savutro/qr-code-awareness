@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Safety Training</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">QR Code Safety Training</h1>
+    <div class="language-switcher">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="fr">Français</option>
+      </select>
+    </div>
+
+    <div class="qr-code">
+      <img src="qr.svg" alt="Fake QR Code">
+    </div>
+
+    <p class="warning" id="warning">⚠️ Warning: This QR code could have led you to a malicious website!</p>
+
+    <h2 id="risks-title">What Are the Risks?</h2>
+    <ul id="risks-list">
+      <li>Malicious QR codes can redirect you to phishing websites designed to steal your personal information.</li>
+      <li>They can trigger unwanted downloads of malware or spyware onto your device.</li>
+      <li>Some QR codes may lead to fraudulent payment pages or scam offers.</li>
+    </ul>
+
+    <h2 id="tips-title">How to Stay Safe</h2>
+    <ul id="tips-list">
+      <li>Always verify the source of a QR code before scanning it.</li>
+      <li>Use a QR scanner app that previews the URL before opening it.</li>
+      <li>Avoid scanning QR codes in public places unless you trust the provider.</li>
+      <li>Keep your device's software and security apps up to date.</li>
+    </ul>
+
+    <p class="tip" id="tip">💡 Tip: If you're unsure about a QR code, don't scan it!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
