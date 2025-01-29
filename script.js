@@ -17,6 +17,7 @@ function initializeApp(translations) {
   const tipsTitle = document.getElementById("tips-title");
   const tipsList = document.getElementById("tips-list");
   const tip = document.getElementById("tip");
+  const footer = document.getElementById("footer");
 
   function updateContent(lang) {
     const translation = translations[lang] || translations["en"];
@@ -27,6 +28,7 @@ function initializeApp(translations) {
     tipsTitle.textContent = translation.tipsTitle;
     tipsList.innerHTML = translation.tipsList.map(item => `<li>${item}</li>`).join("");
     tip.textContent = translation.tip;
+    footer.innerHTML = `${translation.footer} <a href="https://savutro.dev" target="_blank">Savutro</a>`;
   }
 
   function detectBrowserLanguage() {
